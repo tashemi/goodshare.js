@@ -22,5 +22,6 @@ jobs:
         npm install
         npm ci
         npm run build
+        npm update
       env:
         CI: true
