@@ -17,7 +17,7 @@ jobs:
         npm run-script build
 
     - name: Deploy
-      uses: tashemi/goodshare.js@releases/v6
+      
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
