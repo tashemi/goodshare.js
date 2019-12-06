@@ -68,7 +68,8 @@ export class Vkontakte extends ProviderMixin {
     if (count_elements.length > 0) {
       window.VK.Share.count = (_, counter) => {
         [...count_elements].forEach(item => {
-          item.innerHTML = counter;
+          if (counter > 0)
+            item.innerHTML = counter;
         });
 
         if (script.parentNode === null) {
