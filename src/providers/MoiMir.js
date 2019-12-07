@@ -70,7 +70,8 @@ export class MoiMir extends ProviderMixin {
     if (count_elements.length > 0) {
       window[callback] = counter => {
         [...count_elements].forEach(item => {
-          item.innerHTML = counter.share_mm;
+          if (counter.share_mm > 0)
+            item.innerHTML = " " + counter.share_mm;
         });
 
         if (script.parentNode === null) {

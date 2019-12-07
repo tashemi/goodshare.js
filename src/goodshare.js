@@ -20,8 +20,6 @@ import { Odnoklassniki } from "./providers/Odnoklassniki";
 import { MoiMir } from "./providers/MoiMir";
 import { Tumblr } from "./providers/Tumblr";
 import { Pinterest } from "./providers/Pinterest";
-import { Reddit } from "./providers/Reddit";
-import { Buffer } from "./providers/Buffer";
 
 /**
  *  Import social networks providers without share counter.
@@ -33,19 +31,10 @@ import { LinkedIn } from "./providers/LinkedIn";
 import { Evernote } from "./providers/Evernote";
 import { Delicious } from "./providers/Delicious";
 import { Flipboard } from "./providers/Flipboard";
-import { Mix } from "./providers/Mix";
-import { Meneame } from "./providers/Meneame";
 import { Blogger } from "./providers/Blogger";
 import { Pocket } from "./providers/Pocket";
-import { Instapaper } from "./providers/Instapaper";
-import { Digg } from "./providers/Digg";
 import { LiveInternet } from "./providers/LiveInternet";
 import { Surfingbird } from "./providers/Surfingbird";
-import { Xing } from "./providers/Xing";
-import { WordPress } from "./providers/WordPress";
-import { Baidu } from "./providers/Baidu";
-import { RenRen } from "./providers/RenRen";
-import { Weibo } from "./providers/Weibo";
 
 /**
  *  Import mobile messengers providers.
@@ -72,8 +61,6 @@ const providers = [
   LinkedIn,
   Tumblr,
   Pinterest,
-  Reddit,
-  Buffer,
   // Import social networks providers without share counter.
   Twitter,
   LiveJournal,
@@ -81,18 +68,9 @@ const providers = [
   Delicious,
   Flipboard,
   Pocket,
-  Mix,
-  Meneame,
   Blogger,
-  Instapaper,
-  Digg,
   LiveInternet,
   Surfingbird,
-  Xing,
-  WordPress,
-  Baidu,
-  RenRen,
-  Weibo,
   // Import mobile messengers providers.
   SMS,
   Skype,

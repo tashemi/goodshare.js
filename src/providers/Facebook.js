@@ -59,7 +59,7 @@ export class Facebook extends ProviderMixin {
     if (count_elements.length > 0) {
       window[callback] = counter => {
         [...count_elements].forEach(item => {
-          item.innerHTML = counter.share ? counter.share.share_count : 0;
+          item.innerHTML = counter.share ? " " + counter.share.share_count : "";
         });
 
         if (script.parentNode === null) {

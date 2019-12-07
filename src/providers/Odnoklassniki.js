@@ -60,7 +60,8 @@ export class Odnoklassniki extends ProviderMixin {
     if (count_elements.length > 0) {
       window.ODKL.updateCount = (_, counter) => {
         [...count_elements].forEach(item => {
-          item.innerHTML = counter;
+          if (counter > 0)
+            item.innerHTML = " " + counter;
         });
 
         if (script.parentNode === null) {
